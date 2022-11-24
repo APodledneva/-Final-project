@@ -9,7 +9,7 @@ for (int i = 0; i < elements; i++)
 {
     Console.Write(" ");
     array[i] = Console.ReadLine();
-    
+
 }
 Console.Clear();
 string[] array2 = new string[array.Length];
