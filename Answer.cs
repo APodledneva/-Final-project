@@ -4,13 +4,14 @@ Console.Write("Введите колличество элементов масс
 int.TryParse(Console.ReadLine()!, out elements);
 
 string[] array = new string[elements];
-
+Console.WriteLine("Введите элемент: ");
 for (int i = 0; i < elements; i++)
 {
-    Console.Write($"Введите элемент под индексом {i} - ");
+    Console.Write(" ");
     array[i] = Console.ReadLine();
+    
 }
-
+Console.Clear();
 string[] array2 = new string[array.Length];
 void SecondArray(string[] array, string[] array2)
 {
@@ -33,5 +34,7 @@ void PrintArray(string[] array)
     Console.WriteLine();
 }
 SecondArray(array, array2);
+Console.WriteLine($"Первоначальный массив:");
+PrintArray(array);
 Console.WriteLine($"Массив с элементами меньше или равной трем:");
 PrintArray(array2);
